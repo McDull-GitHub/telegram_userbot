@@ -19,7 +19,7 @@ async def delete(chat):
         if message.from_id == me.id:
             print('刪除id為 {} 的訊息\n內容是 {}\n\n'.format(message.id, message.text))
             await client.delete_messages(chat, message.id)
-    print('刪完了@{}的內容\n\n\n'.format(chat))
+    print('刪完了 {} 的內容\n\n\n'.format(chat))
 
 if __name__ == "__main__":
     try:
